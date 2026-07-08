@@ -5,81 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MSDN SQL Downloads</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico?"> -->
-     <link rel="icon" href="https://user456-ux.github.io/hello-world/images/favicon.ico?v=1" />
-
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" href="https://user456-ux.github.io/hello-world/images/favicon.ico?v=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
-  
-    <!-- jquery ui-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <script>
-    $( function() {
-      $( document ).tooltip();
-    } );
+      $( function() { $( document ).tooltip(); } );
     </script>
-    <style>
-     label {
-      display: inline-block;
-      width: 5em;
-    }
-    </style>
-     <!-- jquery ui-->
-   </head>
+  </head>
   <body>
-    <main>
-        <h2  style="color:rgb(95, 95, 95);text-align:center;">MSDN SQL Client & DB Free Downloads</h2>  
-      
-        <p style="color:rgb(95, 95, 95);font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
-          Ever got a new Corp laptop and noticed your basic DB devloper software was not installed or not available in the sofware center. <br/><br/>
-          Of course, so we SSO over to MSDN and get that SQL only to find we can't open the ISO, or the EXE is blocked.  Note: ISO can be mounted with zip tools (not covered here). <br/><br/>
-          Next, we just go to the public MS download for SSMS or SQL Express only to get some odd error such as "location is empty" e.g. download seems to start then that error. <br/>
-          Well, that is your Corp Network Proxy blocking these files. <br/><br/>
 
-          So, it sure would be nice if somone posted a .zip for these. <br/><br/>
+    <header class="site-header">
+      <div class="container">
+        <h1>MSDN SQL Downloads</h1>
+      </div>
+    </header>
 
-          <span style="color: black">Steps:</span> 
-           <Ul>
-            <li style="font-size: 18px;font-family: Arial;">Choose your download</li>
-            <li style="font-size: 18px;font-family: Arial;">After downloading, unzip it</li>
-            <li style="font-size: 18px;font-family: Arial;">Rename extracted file to include the extension .exe <br/><br/> Note: this was 
-            added as some proxies examine extensions as well. <br/> Thess zips are just renamed binaries w/o the obvious .exe
+    <main class="container">
+
+      <section class="intro">
+
+        <h3 class="section-header">Dilemma</h3>
+        <div class="section-body">
+          <p>
+            Do you have a new Corporate laptop and you've noticed your basic DB developer software was not installed
+            or not available in the software center?
+          </p>
+          <p>
+            Of course - so we SSO over to MSDN and get that SQL only to find we can't open the ISO,
+            or the EXE is blocked. Note: ISO can be mounted with zip tools (not covered here).
+          </p>
+          <p>
+            Why this happens... our Corporate Network Proxy (or local antivirus software) is blocking the download extension ".exe" of these files.
+            Even though our company allows the download from the Microsoft website, the proxy or antivirus software may still block it.
+          <hr>
+          </p>
+          <p>
+            Next, we just go to the public MS download for SSMS or SQL Express only to get some odd
+            error such as "location is empty" - i.e. the download seems to start then fails.
+            That is your Corporate Network Proxy blocking the file download.
+          </p>
+          <p>So, it sure would be nice if someone posted a <code>.zip</code> for these.</p>
+        </div>
+
+        <h3 class="section-header">Solution</h3>
+        <div class="section-body">
+          <ul>
+            <li>Choose your download below</li>
+            <li>After downloading, unzip it</li>
+            <li>
+              Rename the extracted file to include the <code>.exe</code> extension
+              <span class="note">Note: some proxies examine file extensions — these zips are renamed
+              binaries without the obvious <code>.exe</code></span>
             </li>
-           </Ul>
-         </p>
+          </ul>
+        </div>
 
-        <br/><br/>
+      </section>
 
-        <a href="https://user456-ux.github.io/hello-world/SSMS_v21.zip"  title="SQL Server Management Studio 21">Download SSMS (zip)</a><br/>
-        <a href="https://learn.microsoft.com/en-us/ssms/install/install">&nbsp;&nbsp;&nbsp;&nbsp; or Microsoft .exe Scroll to Download SSMS 21</a>
-        <!-- https://aka.ms/ssms/21/release/vs_SSMS.exe -->
+      <section class="downloads">
 
-        <p><a href="https://user456-ux.github.io/hello-world/SQL_Express.zip"  title="Microsoft SQL Server 2022 Express">Download SQL Express (zip)</a><br/>
-        <a href="https://www.microsoft.com/en-us/download/details.aspx?id=104781&lc=1033">&nbsp;&nbsp;&nbsp;&nbsp; or Microsoft .exe Microsoft</a>
-          
-        </p>  
-      
-      
-        <p><a href="https://user456-ux.github.io/hello-world/1.jpg" title="Open in Browser">Download Test</a></p>  
-        <a download='test.jpg' id='id1' href="https://user456-ux.github.io/hello-world/1.jpg" title="SameSite Download">
-  Download
-</a>
-               
-    
-     
+        <div class="download-card">
+          <div class="download-title">SQL Server Management Studio (SSMS 21)</div>
+          <a class="btn-download" href="https://user456-ux.github.io/hello-world/SSMS_v21.zip"
+             title="SQL Server Management Studio 21">Download SSMS (zip)</a>
+          <a class="btn-alt" href="https://learn.microsoft.com/en-us/ssms/install/install">
+            or download direct from Microsoft</a>
+        </div>
+
+        <div class="download-card">
+          <div class="download-title">Microsoft SQL Server 2022 Express</div>
+          <a class="btn-download" href="https://user456-ux.github.io/hello-world/SQL_Express.zip"
+             title="Microsoft SQL Server 2022 Express">Download SQL Express (zip)</a>
+          <a class="btn-alt" href="https://www.microsoft.com/en-us/download/details.aspx?id=104781&lc=1033">
+            or download direct from Microsoft</a>
+        </div>
+
+      </section>
+
     </main>
-    <script src="index.js"></script>
 
-    <div class="fixed-footer">
-        <div class="container" style="float: left;">&nbsp;&nbsp; &copy; Copyright 2026
-            &nbsp;&nbsp;&nbsp;&nbsp; </div>        
-    </div>
-   </footer>
+    <footer class="fixed-footer">
+      <div class="container">&copy; Copyright 2026</div>
+    </footer>
 
   </body>
-
- 
 </html>
